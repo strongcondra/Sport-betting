@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]>
+<html class="ie ie6" lang="en">
+<![endif]-->
+<!--[if IE 7 ]>
+<html class="ie ie7" lang="en">
+<![endif]-->
+<!--[if IE 8 ]>
+<html class="ie ie8" lang="en">
+<![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="zxx" class=" js "><!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title>Prophecy - An Online Betting Platform</title>
+    <!--Favicon-->
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <!--Bootstrap Stylesheet-->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <!--FontAwesome Stylesheet-->
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <!--Main Stylesheet-->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!--Responsive Stylesheet-->
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+    <!--Modanizr JS-->
+    <script src="js/modernizr.custom.js"></script>
+    <!--[if IE]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+
+
+<body class="body-class">
+<!--Start Body Wrap-->
+<div id="body-wrap">
+    <!--Start Container-->
+    <div class="container-fluid">
+        <div id="sidebar">
+            <div class="logo">
+                <a href="#" class="">
+                    <span><img src="images/logo.png" alt=""></span>
+                </a>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li class=""><a href="#intro"><i class="fa fa-info-circle"></i> INTRODUCTION</a></li>
+                    <li class=""><a href="#server"><i class="fa fa-server"></i> SERVER REQUIREMENTS</a></li>
+                    <li class=""><a href="#server-faq"><i class="fa fa-question-circle"></i> SERVER FAQ</a></li>
+                    <li class="active"><a href="#install"><i class="fa fa-cloud-upload"></i> HOW TO INSTALL</a></li>
+                    <li class=""><a href="#folder"><i class="fa fa-folder-open-o"></i> FOLDER STRUCTURE</a></li>
+                    <li class=""><a href="#cron"><i class="fa fa-calendar"></i> CRON JOB SETUP</a></li>
+                    <li><a href="#admin-dashboard"> <i class="fa fa-tachometer"></i> ADMIN DASHBOARD</a></li>
+
+                    <li><a href="#basic-control"><i class="fa fa-cogs"></i> BASIC CONTROLS</a></li>
+                    <li><a href="#seo-meta"><i class="fa fa-search-plus"></i> SEO &amp; META KEYWORDS</a></li>
+                    <li><a href="#language"><i class="fa fa-language"></i> LANGUAGE</a></li>
+
+                    <li><a href="#mail"><i class="fa fa-envelope"></i> EMAIL CONTROLS</a></li>
+                    <li><a href="#sms"><i class="fa fa-phone"></i> SMS CONTROLS</a></li>
+                    <li><a href="#push"><i class="fa fa-bell-o"></i> PUSH NOTIFICATION</a></li>
+                    <li><a href="#support"><i class="fa fa-headphones"></i> SUPPORT</a></li>
+                </ul>
+            </nav>
+        </div>
+
+
+        <div class="row">
+            <div class="col-sm-9 col-sm-offset-3">
+                <div id="content">
+
+                    <div id="intro" class="padding">
+                        <h1 class="font-600">Prophecy - An Online Betting Platform</h1>
+                        <hr>
+                        <h2>Introduction</h2>
+                        <p><span class=" font-700"> “Prophecy” </span> is an Online Betting Platform. It can be used to guess the result of WorldCup / Tournament matches in a kind of prediction. The players compete in guessing the correct result of some kind of match. Soccer, Cricket, Baseball, Basketball, or even Yes/No questions like: will Brazil win the next WorldCup.
+
+                            <br>
+                            Admin can control match lock/unlock, ratio update, question , option add instantly where user don't need to website reload
+
+                            <br>
+
+                            It has strong SQL injection protection system which will keep away this system from hackers.
+                        </p>
+                    </div>
+
+                    <div id="server" class="padding">
+                        <h2>Server Requirements</h2>
+                        <ul class="requirement-list">
+                            <li class="text-danger font-500">✓ PHP Version 7.4</li>
+                            <li>✓ MySQL Version 5.7+ or MariaDB version 10.2+</li>
+                            <li>✓ BCMath PHP Extension</li>
+                            <li>✓ Ctype PHP Extension</li>
+                            <li>✓ Fileinfo PHP extension</li>
+                            <li>✓ JSON PHP Extension</li>
+                            <li>✓ Mbstring PHP Extension</li>
+                            <li>✓ OpenSSL PHP Extension</li>
+                            <li>✓ PDO PHP Extension</li>
+                            <li>✓ PDO_MYSQL PHP Extension</li>
+                            <li>✓ Tokenizer PHP Extension</li>
+                            <li>✓ XML PHP Extension</li>
+                            <li>✓ CURL PHP Extension</li>
+                            <li>✓ GD PHP Extension</li>
+                            <li>✓ GMP PHP Extension</li>
+                        </ul>
+                    </div>
+
+                    <div id="server-faq" class="padding">
+                        <h2>Frequently Asked About Server</h2>
+                        <div class="section-body-content">
+                            <div class="faq-content mb-20">
+                                <p class="text">
+                                    <strong>Question : </strong>Do I need VPS or a Dedicated server to run this system?
+                                </p>
+                                <p class="text mt-10">
+                                    <strong class="text-success">Answer : </strong>No, You can run this system in a
+                                    shared host
+                                    as well and it will run smoothly. But if you have much traffic, you may need to
+                                    upgrade your
+                                    server/hosting. Our codes are highly optimized to ensure the best possible
+                                    performance.
+                                </p>
+                            </div>
+                            <div class="faq-content mb-20">
+                                <p class="text">
+                                    <strong>Question : </strong>Which hosting provider should I choose for this? Do you
+                                    have any
+                                    suggestions?
+                                </p>
+                                <p class="text mt-10">
+                                    <strong class="text-success">Answer : </strong>You can choose any hosting provider
+                                    who
+                                    provides Cpanel based hosting. cPanel is not a must, but we recommend you to have
+                                    cPanel
+                                    based hosting.
+                                </p>
+                            </div>
+                            <div class="faq-content mb-20">
+                                <p class="text">
+                                    <strong>Question : </strong>Which hosting provider should I choose for this? Do you
+                                    have any
+                                    suggestions?
+                                </p>
+                                <p class="text mt-10">
+                                    <strong class="text-success">Answer : </strong>You can choose any hosting provider
+                                    who
+                                    provides Cpanel based hosting. cPanel is not a must, but we recommend you to have
+                                    cPanel
+                                    based hosting.
+                                </p>
+                            </div>
+                            <div class="faq-content">
+                                <p class="text">
+                                    <strong>Question : </strong>I don't have cPanel, What should I do?
+                                </p>
+                                <p class="text mt-10">
+                                    <strong class="text-success">Answer : </strong>Nothing to worry about, Our system
+                                    will work
+                                    with any control panel but cPanel is easy to manage, for that we recommend cPanel
+                                    based
+                                    hosting. Also, Our free Support is limited to cPanel based hosting only.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="install" class="padding">
+                        <h2>How To Install</h2>
+                        <hr>
+                        <p>
+                            After downloading file from codecanyon you will get a zip file.  Extracting the zip file  you will get <span
+                                class="color font-500"><i class="fa fa-folder-open-o"></i> Documentation</span> Folder
+                            and <span class="color font-500"><i class="fa fa-folder-open-o"></i> SQL</span> folder. also
+                            <span class="font-500"><img
+                                    src="images/zip.png" alt="..." height="16"> project.zip</span> included in there:
+                        </p>
+                        <h6 class="text-base"><strong> <span class="text-secondary font-weight-bold">N.B:</span>
+                            If you are unable to install, Here is a video tutorial for you
+                            <a href="https://youtu.be/mJTDtduwx9I" target="_blank" class="base-color" style="font-size:16px"> Click Here to watch </a>
+
+                        </strong>
+                        </h6>
+
+
+                        <ul class="requirement-list">
+
+
+                            <li><b>Step 1 :</b> Create mySQL Database and Database User.</li>
+
+                            <p>✓ Go to MySQL® Database Wizard</p>
+                            <div class="code-block ">
+                                <img src="images/db/01.png" class="w-100" alt="">
+                            </div>
+                            <br><br>
+
+
+                            <p>✓ Create A database</p>
+                            <div class="code-block ">
+                                <img src="images/db/02.png" class="w-100" alt="">
+                            </div><br><br>
+
+                            <p>✓ Put Your database username & Password then click Create User Button </p>
+                            <p>NB: Save <code> database name, database username, database password  </code> for next step</p>
+                            <div class="code-block ">
+                                <img src="images/db/03.png" class="w-100" alt="">
+                            </div><br><br>
+
+                            <div class="code-block ">
+                                <img src="images/db/04.png" class="w-100" alt="">
+                            </div><br><br>
+
+                            <div class="code-block ">
+                                <img src="images/db/05.png" class="w-100" alt="">
+                            </div><br><br>
+
+
+
+                            <li><b>Step 2 :</b>For importing Database go to phpMyAdmin
+                            </li>
+
+                            <div class="code-block ">
+                                <img src="images/db/06.png" class="w-100" alt="">
+                            </div><br><br>
+
+                            <p>
+                                In your database go to <span class="font-600">Import</span> tab for
+                                importing <span class="text-dark font-500">install.sql</span> file from <span
+                                    class="color font-500"><i class="fa fa-folder-open-o"></i> SQL</span> Folder.
+                            </p>
+
+
+
+                            <div class="code-block ">
+                                <img src="images/db/07.png" class="w-100" alt="">
+                            </div>
+                            <br>
+                            <li>Import <span class="text-dark font-500">install.sql</span> file from <span
+                                    class="color font-500"><i class="fa fa-folder-open-o"></i> SQL</span> Folder in your
+                                database.
+                            </li>
+                            <br>
+
+
+
+                            <li><b>Step 3 :</b>
+
+                                Extracting the zip file you will
+                                get a <span class="font-500"><img
+                                        src="images/zip.png" alt="..." height="16"> project.zip </span> file.
+
+
+                                You have to upload <span class="font-500"><img
+                                        src="images/zip.png" alt="..." height="16"> project.zip </span> in your server, extract it & then delete
+                                it.
+
+
+                                <ul>
+                                    <li>✓ If you upload it in <span class="font-500 color "><i class="fa fa-folder-open-o"></i> public_html </span>  folder, then visit <span class="font-500">http://your-sitename</span> in
+                                        browser.
+                                    </li>
+                                    <li>✓
+                                        If you upload it in a folder in <span class="font-500 color "><i class="fa fa-folder-open-o"></i> public_html </span> folder, then visit
+                                        <span class="font-500">http://your-sitename/folder_name </span> in browser.
+                                    </li>
+                                    <li>✓
+                                        If you upload it in your created subdomain folder, then visit
+                                        <span class="font-500">http://your-subdomain-name </span> in browser.
+                                    </li>
+                                    <li>✓ If you upload it in a folder in your created subdomain folder, then visit
+                                        <span class="font-500">http://your-subdomain-name/folder_name </span>  in browser.
+                                    </li>
+                                </ul>
+
+                            </li>
+
+
+                            <br>
+                            <p>System is ready to active.</p>
+                            <div class="code-block ">
+                                <img src="images/install/01.png" class="w-100" alt="">
+                            </div>
+
+
+
+
+
+                            <li><b>Step 4 :</b>
+                                Go to  <span class="font-500">http://your-sitename/install</span>
+                                <br>
+                                Check your server Requirements
+                            </li>
+                            <div class="code-block ">
+                                <img src="images/install/02.png" class="w-100" alt="">
+                            </div><br><br>
+
+
+
+                            <li><b>Step 5 :</b> Folder permission</li>
+                            <div class="code-block ">
+                                <img src="images/install/03.png" class="w-100" alt="">
+                            </div>
+                            <br><br>
+
+                            <li><b>Step 6 :</b> License Verifications, Environment & Database Setup</li>
+                            <div class="code-block ">
+                                <img src="images/install/04.png" class="w-100" alt="">
+                            </div>
+                            <br><br>
+
+                            <li><b>Step 7 :</b> Installation Success, Open your browser and visit <span class="font-500">http://your-sitename</span>
+                                <br>
+                                System is ready, you able to use now.</li>
+                            <div class="code-block ">
+                                <img src="images/install/05.png" class="w-100" alt="">
+                            </div>
+                            <br><br>
+
+
+                        </ul>
+
+                        <br>
+                        <p>System is ready, you able to use now.</p>
+                        <p>
+                            To login into admin panel, visit: <br>
+                            <span class=" font-600">http://your-sitename/admin</span> <br>
+                            User: admin <br>
+                            Password: admin
+                        </p>
+
+                        <p><strong>NB:</strong> If you are failed to install this script to server then send us a mail
+                            in
+                            <strong>bugfinder.me@gmail.com</strong><br>
+                            We Offering FREE Install Service on Cpanel Based Web Hosting.
+                        </p>
+
+                    </div>
+
+                    <div id="folder" class="padding">
+                        <h2>Folder Structure</h2>
+                        <hr>
+                        <p>
+                            After installation, There will be 10 folders and 17 files will be in your main folder.:
+                        </p>
+                        <br>
+                        <div class="code-block ">
+                            <img src="images/folder.png" class="w-100" alt="">
+                        </div>
+                        <br>
+                        <p>
+                            On the <span class="font-600">assets</span> folder, We keep all kinds of assets like CSS,
+                            JS, Images. If you want To edit or change anything over CSS or js, please have a look at
+                            this folder.
+                        </p>
+                        <p>
+                            On the other folder and files, We keep the core of Laravel and we maintain full MVC
+                            structure on this project.
+                        </p>
+                    </div>
+
+
+                    <div id="cron" class="padding">
+                        <h2>CRON JOB SETUP</h2>
+                        <hr>
+                        <p>After Complete installation then set a cron job on your server for getting update order
+                            status.</p>
+                        <img src="images/cron.png" class="img-responsive" alt="Image">
+
+                        <p>
+                            set cron job your hosting <br>
+                            <code class=" font-600">curl -s http://yourSitename/cron</code> <br>
+                            <code class=" font-600">curl -s http://yourSitename/queue-work</code> <br>
+                        </p>
+
+                        <img src="images/cron1.png" class="img-responsive" alt="Image">
+
+
+                        <h6 class="text-base"><strong> <span class="text-secondary font-weight-bold">N.B:</span>
+                            If you are unable to set, Here is a video tutorial for you
+                            <a href="https://www.youtube.com/watch?v=wuvTRT2ety0" target="_blank" class="base-color" style="font-size:16px"> Click Here to watch </a>
+
+                        </strong>
+                        </h6>
+                    </div>
+
+                    <div id="admin-dashboard" class="padding">
+                        <h2>Admin Dashboard</h2>
+                        <hr>
+                        <p>The items come with the latest Secure admin panel with a unique admin Dashboard.
+                            You can check all information and basic statistics like (User Statistics, Information,
+                            Financial Statistics, Earning By Charge Statistics) on to your dashboard.
+                            You can manage all the basic information from here where the website is managed.</p>
+                        <img src="images/admin-dashboard.png" class="img-responsive" alt="Image">
+                    </div>
+
+
+                    <div id="basic-control" class="padding">
+                        <h2>BASIC CONTROLS</h2>
+                        <hr>
+                        <p>You can control every thing from there</p>
+                        <img src="images/basic-control.png" class="img-responsive" alt="Image">
+
+                        <br>
+                        <hr>
+                        <ul class="requirement-list">
+                            <li class="text mb-5">
+                                <strong>Site Title :</strong> The name of your website.
+                            </li>
+
+                            <li class="text mb-5">
+                                <strong>Time Zone :</strong> You can set the timezone of your websites.
+                            </li>
+
+                            <li class="text mb-5">
+                                <strong>Base Currency :</strong> You can set the base currency of your website.
+                            </li>
+                            <li class="text mb-5">
+                                <strong>Currency Symbol :</strong> You can set the currency symbol of your website.
+                            </li>
+                            <li class="text mb-5">
+                                <strong>Fraction Number :</strong> You can set the fractional point of your website.
+                            </li>
+
+
+                            <li class="text mb-5">
+                                <strong>Paginate per page :</strong> You can set the per page content number of your
+                                website.
+                            </li>
+
+                            <li class="text mb-5">
+                                <strong>Base Color :</strong> You can change website color.
+                            </li>
+
+
+                            <li class="text mb-5">
+                                <strong class="text-danger">Debug Mode :</strong> After complete all testing, when admin will decide to go production, he must be disabled it
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div id="seo-meta" class="padding">
+                        <h2>SEO &amp; META KEYWORDS</h2>
+                        <hr>
+                        <p>You can set the logo and favicon from Logo & SEO Settings. To change your website logo and
+                            favicon you don't need to change any code base.</p>
+
+                        <p>
+                            SEO now becomes a very important part of any website, and that is why we have added a simple
+                            but powerful SEO manager tool in the admin panel. Now you can set your SEO keywords, meta
+                            tag, and OG image from your admin panel without paying anyone. SEO setting is just one-click
+                            away.</p>
+                        <img src="images/seo.png" class="img-responsive" alt="Image">
+                        <hr>
+                        <ul class="requirement-list">
+                            <li class="text mb-5">
+                                <strong class="text-danger">NB :</strong> after change logo/seo, please clear your browser cache to see changes
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="language" class="padding">
+                        <h2>LANGUAGE</h2>
+                        <hr>
+                        <p>Nowadays, many website owners want to localize their websites. They want to set many
+                            languages so users can choose and see the website in their mother language. But they can not
+                            set as many other software providers don't give that option Built-in and they charge a high
+                            amount of money to set that, In our product, you need not to pay any single penny for that.
+                            we include a unique language manager where you can easily set any language within a very
+                            short time.</p>
+                        <img src="images/language.png" class="img-responsive" alt="Image">
+                    </div>
+
+
+                    <div id="mail" class="padding">
+                        <h2>EMAIL CONTROLS</h2>
+                        <hr>
+                        <p>
+                            You can set your own SMTP email configuration from Email controls to send all kinds of
+                            emails and email notification.
+                            You can configure here your own email template to send email. Basically email configuration
+                            is a very powerful tool.
+                        </p>
+                        <img src="images/mail.png" class="img-responsive" alt="Image">
+                    </div>
+
+                    <div id="sms" class="padding">
+                        <h2>SMS CONTROLS</h2>
+                        <hr>
+                        <p>
+                            Basically SMS controls is a very powerful and useful feature of SMM Matrix.
+                            You can configure yor any kind of SMS API from SMS controls.
+                            To configure SMS controls you don't need to change any single line of codebase and database.
+                        </p>
+                        <img src="images/sms.png" class="img-responsive" alt="Image">
+                    </div>
+
+                    <div id="push" class="padding">
+                        <h2>PUSH NOTIFICATIONS</h2>
+                        <hr>
+                        <p>
+                            Now a days push notification is very essential to get any kind of notification instantly.
+                            But, sadly most of the web development company doesn't care about it.
+                            We don't you to miss any kind of instant notification into our SMM Matrix.
+                            So, we implement push notification here. You can set your pusher configuration from the Push
+                            Notification.
+                        </p>
+                        <img src="images/push.png" class="img-responsive" alt="Image">
+                    </div>
+
+
+
+
+                    <div id="support" class="padding">
+                        <h2>Support</h2>
+                        <hr>
+                        <p>
+                            We are always happy to hear from you. Please feel free to contact us for any kind of
+                            customization, support, query and suggestion. We will respond as soon as possible. Please
+                            email us from our profile so we can verify you as our client and help you to solve any
+                            issue.
+                        </p>
+
+
+                        <p class="color  font-500"> We are looking for your precious review. your review will be
+                            inspiration for us
+                            <br>
+                            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                                    class="fa fa-star"></i><i class="fa fa-star"></i>
+                        </p>
+
+                        <div class="support">
+                            <h6 class="font-500">Support Email: <span class="base-color">bugfinder.me@gmail.com</span>
+                            </h6>
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+
+                <div id="footer-text">
+                    <p class="text-center">© 2021. All Rights Reserved By <a
+                            href="https://codecanyon.net/user/bug-finder" class="color">bug-finder</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End Container-->
+</div>
+<!--End Body Wrap-->
+
+
+<!--jQuery JS-->
+<script src="js/jquery.min.js"></script>
+<!--Bootstrap JS-->
+<script src="js/bootstrap.min.js"></script>
+<!--Main JS-->
+<script src="js/main.js"></script>
+
+</body>
+</html>
